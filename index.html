@@ -3,161 +3,250 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Kavia Shirkoohi builds practical AI systems, retrieval tools and agent infrastructure." />
-  <title>Kavia Shirkoohi · AI Builder</title>
+  <meta name="description" content="Kavia Shirkoohi builds practical AI systems, retrieval infrastructure and agent tooling." />
+  <meta name="theme-color" content="#10120f" />
+  <title>Kavia Shirkoohi | AI Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Kavia home">KS</a>
-    <nav aria-label="Primary">
+    <a class="brand" href="#top" aria-label="Kavia Shirkoohi home">SHIRKOOHI<span>.COM</span></a>
+    <nav aria-label="Primary navigation">
       <a href="#work">Work</a>
+      <a href="#value">Value</a>
       <a href="#about">About</a>
-      <a href="https://github.com/krshirkoohi" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a class="nav-cta" href="https://linkedin.com/in/krshirkoohi" target="_blank" rel="noreferrer">LinkedIn ↗</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">AI builder · Cardiff, UK</p>
-        <h1>I build small, useful systems that make AI more reliable.</h1>
-        <p class="lede">I’m Kavia, an entry-level AI builder with a physics background. My work sits around retrieval, agent infrastructure, semantic search and lightweight evaluation. I like systems that are understandable enough to inspect and useful enough to deploy.</p>
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="kicker">AI systems · retrieval · agent infrastructure</p>
+        <h1>I build the layer between a capable model and a useful product.</h1>
+        <p class="hero-lede">I’m Kavia Shirkoohi, an AI builder with a physics background. I design retrieval systems, agent tools and practical automations that give models better context, clearer boundaries and something real to work with.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#work">See selected work</a>
-          <a class="button" href="https://github.com/krshirkoohi" target="_blank" rel="noreferrer">Browse GitHub</a>
+          <a class="button button-primary" href="#work">See the work</a>
+          <a class="button" href="https://github.com/krshirkoohi" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+        <div class="hero-proof" aria-label="Portfolio summary">
+          <div><span class="proof-value">Live</span><span class="proof-label">cloud AI retrieval</span></div>
+          <div><span class="proof-value">MCP</span><span class="proof-label">agent interfaces</span></div>
+          <div><span class="proof-value">BSc + MSc</span><span class="proof-label">physics foundation</span></div>
         </div>
       </div>
-      <aside class="hero-card" aria-label="Current focus">
-        <span class="status-dot"></span>
-        <p class="mono-label">CURRENT FOCUS</p>
-        <h2>Retrieval systems for AI agents</h2>
-        <p>Combining semantic search, graph structure and live source context so assistants can retrieve the right evidence without forcing people to reorganise their lives around the model.</p>
-      </aside>
+
+      <div class="hero-preview reveal" data-delay="1">
+        <div class="preview-window">
+          <div class="preview-topbar">
+            <span class="preview-label">LIVE PROJECT PREVIEW</span>
+            <span class="preview-state"><i></i> semantic engine</span>
+          </div>
+          <a class="preview-media" href="https://github.com/krshirkoohi/tana-context-mask" target="_blank" rel="noreferrer" aria-label="Open Tana Semantic Engine repository">
+            <img src="https://raw.githubusercontent.com/krshirkoohi/tana-context-mask/main/assets/demo_agent_learning_synthesis.gif" alt="Tana Semantic Engine retrieving and synthesising notes in ChatGPT" />
+            <span class="media-caption">Meaning → evidence → native source</span>
+          </a>
+          <div class="preview-terminal">
+            <span>&gt; acquire_context("things I learned about AI agents")</span>
+            <span class="terminal-ok">✓ semantic candidates + graph context + source links</span>
+          </div>
+        </div>
+        <div class="floating-note note-a">semantic search<br><strong>+</strong> graph structure</div>
+        <div class="floating-note note-b">built for<br><strong>real AI clients</strong></div>
+      </div>
     </section>
 
-    <section class="signal-strip" aria-label="Skills summary">
-      <span>Semantic retrieval</span><span>MCP</span><span>Cloudflare Workers</span><span>Python</span><span>Vector search</span><span>Agent tooling</span><span>Evaluation</span>
+    <section class="ticker" aria-label="Core skills">
+      <div class="ticker-track">
+        <span>Semantic retrieval</span><span>GraphRAG</span><span>Model Context Protocol</span><span>Cloudflare Workers</span><span>Python</span><span>Vector search</span><span>Agent evaluation</span><span>OpenAPI</span><span>RAG</span>
+      </div>
     </section>
 
-    <section id="work" class="section-shell work-section">
-      <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h2>Projects with something real to inspect.</h2>
-        <p>I’d rather show a working system, architecture and trade-offs than a wall of technology logos.</p>
+    <section id="work" class="shell section work-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">Selected work</p>
+          <h2>Projects that explain themselves by doing something.</h2>
+        </div>
+        <p>Each project starts with a concrete failure mode or workflow problem. The interesting part is not the model call. It is the retrieval, state, interfaces, trade-offs and behaviour around it.</p>
       </div>
 
-      <article class="project feature-project">
-        <div class="project-copy">
-          <div class="project-meta"><span>01</span><span>Retrieval infrastructure</span><span>2026</span></div>
+      <article class="case-study flagship reveal">
+        <div class="case-copy">
+          <div class="case-index">01 / retrieval infrastructure</div>
           <h3>Tana Semantic Engine</h3>
-          <p class="project-intro">A cloud-hosted semantic layer for a Tana knowledge graph. It gives AI clients a way to search by meaning, then use Tana’s native graph to recover hierarchy, references, tags and fields.</p>
-          <div class="project-points">
-            <div><strong>Problem</strong><p>Pure keyword search misses meaning. Pure vector search loses structure.</p></div>
-            <div><strong>Approach</strong><p>Blend dense retrieval, BM25, graph expansion, temporal provenance and multi-factor reranking.</p></div>
-            <div><strong>Delivery</strong><p>OpenAPI, MCP and REST interfaces, with serverless Cloudflare deployment and automated sync.</p></div>
+          <p class="case-lede">A cloud-hosted intelligence layer for a live Tana workspace. It combines dense vector retrieval with lexical search and graph structure so AI clients can find information by meaning without losing the relationships that make it useful.</p>
+          <div class="case-grid">
+            <div><span>Problem</span><p>Keyword search misses meaning. Pure vector search flattens structure.</p></div>
+            <div><span>System</span><p>Hybrid retrieval, structural expansion, temporal provenance and reranking.</p></div>
+            <div><span>Delivery</span><p>Cloudflare edge deployment with OpenAPI, MCP and REST interfaces.</p></div>
           </div>
-          <div class="project-links">
-            <a class="button primary" href="https://github.com/krshirkoohi/tana-context-mask" target="_blank" rel="noreferrer">View repository ↗</a>
-            <a class="button" href="https://tana-context-mask.krshirkoohi.workers.dev" target="_blank" rel="noreferrer">Live endpoint ↗</a>
+          <div class="chips">
+            <span>Cloudflare Workers</span><span>Vectorize</span><span>D1 / FTS5</span><span>MCP</span><span>OpenAPI</span>
+          </div>
+          <div class="case-actions">
+            <a class="button button-primary" href="https://github.com/krshirkoohi/tana-context-mask" target="_blank" rel="noreferrer">Inspect repository ↗</a>
+            <button class="button demo-switch" data-demo="synthesis">Demo: synthesis</button>
+            <button class="button demo-switch" data-demo="evidence">Demo: evidence</button>
           </div>
         </div>
-        <div class="system-visual" aria-label="Tana Semantic Engine architecture diagram">
-          <div class="arch-node arch-wide">AI client</div>
-          <div class="arch-connector">↓ OpenAPI / MCP / REST</div>
-          <div class="arch-node arch-emphasis">Context Mask Gateway</div>
-          <div class="arch-grid">
-            <div class="arch-node">Dense vectors<br><span>Vectorize</span></div>
-            <div class="arch-node">Lexical search<br><span>D1 / FTS5</span></div>
-            <div class="arch-node">Reranking<br><span>authority + time</span></div>
+
+        <div class="case-visual tana-demo" id="tana-demo">
+          <div class="visual-toolbar">
+            <span>real workspace demo</span><span id="demo-title">agent learning synthesis</span>
           </div>
-          <div class="arch-connector">↓ live graph context</div>
-          <div class="arch-node arch-wide">Tana knowledge graph</div>
+          <a id="demo-link" href="https://raw.githubusercontent.com/krshirkoohi/tana-context-mask/main/assets/demo_agent_learning_synthesis.mp4" target="_blank" rel="noreferrer">
+            <img id="demo-image" src="https://raw.githubusercontent.com/krshirkoohi/tana-context-mask/main/assets/demo_agent_learning_synthesis.gif" alt="Tana Semantic Engine synthesis demo" />
+          </a>
+          <div class="visual-foot">
+            <span id="demo-prompt">“Things I have learned about AI agents”</span>
+            <span>tap preview for full video ↗</span>
+          </div>
         </div>
       </article>
 
-      <article class="project split-project">
-        <div class="project-copy">
-          <div class="project-meta"><span>02</span><span>AI evaluation</span><span>2026</span></div>
+      <article class="case-study reveal">
+        <div class="case-copy">
+          <div class="case-index">02 / agent reliability</div>
           <h3>Drift Detector</h3>
-          <p class="project-intro">A lightweight early-warning system for long AI coding sessions. It tracks semantic departure from an on-task baseline and only raises the alarm when divergence persists.</p>
-          <ul class="clean-list">
-            <li>Vector-distance monitoring instead of a second LLM judging every turn</li>
-            <li>Page-Hinkley trend gating to forgive isolated tangents</li>
-            <li>Original mission anchor preserved across context compaction</li>
-            <li>Local and hosted embedding providers plus deterministic test mode</li>
-          </ul>
-          <div class="project-links">
-            <a class="button primary" href="https://krshirkoohi.github.io/drift-detector/" target="_blank" rel="noreferrer">Try simulator ↗</a>
+          <p class="case-lede">A lightweight check-engine light for long AI coding sessions. It watches semantic distance from the original working mode, forgives one-off tangents and warns only when divergence persists.</p>
+          <div class="case-grid two">
+            <div><span>Signal</span><p>Assistant-response embeddings compared with an on-task baseline centroid.</p></div>
+            <div><span>Noise control</span><p>Page-Hinkley trend gating separates transient blips from sustained drift.</p></div>
+          </div>
+          <div class="metric-row">
+            <div><strong>5.16 ms</strong><span>local neural embedding latency</span></div>
+            <div><strong>10k</strong><span>turn stress scenario</span></div>
+            <div><strong>MCP</strong><span>control plane</span></div>
+          </div>
+          <div class="case-actions">
+            <a class="button button-primary" href="https://krshirkoohi.github.io/drift-detector/" target="_blank" rel="noreferrer">Try live simulator ↗</a>
             <a class="button" href="https://github.com/krshirkoohi/drift-detector" target="_blank" rel="noreferrer">Repository ↗</a>
           </div>
         </div>
-        <div class="drift-demo" aria-label="Drift Detector illustrative chart">
-          <div class="demo-head"><span>LIVE SESSION</span><span class="nominal">MONITORING</span></div>
-          <div class="chart" aria-hidden="true">
-            <svg viewBox="0 0 600 240" role="img">
-              <line x1="0" y1="150" x2="600" y2="150" class="threshold" />
-              <polyline points="0,195 55,190 110,193 165,185 220,178 275,184 330,150 385,144 440,111 495,75 550,48 600,39" class="trace" />
+
+        <div class="case-visual drift-panel" aria-label="Illustration of a Drift Detector session">
+          <div class="drift-head"><span>SESSION 0042</span><span class="monitoring"><i></i> monitoring</span></div>
+          <div class="drift-chart">
+            <div class="threshold-line"><span>alert threshold</span></div>
+            <svg viewBox="0 0 720 300" role="img" aria-label="Drift score rising over time">
+              <polyline class="drift-path" points="0,234 55,230 110,236 165,224 220,228 275,206 330,219 385,193 440,174 495,150 550,105 605,76 660,52 720,36" />
+              <circle cx="720" cy="36" r="7" class="drift-dot" />
             </svg>
           </div>
-          <div class="demo-stats">
+          <div class="drift-status">
             <div><span>distance</span><strong>0.34</strong></div>
-            <div><span>threshold</span><strong>0.18</strong></div>
-            <div><span>state</span><strong>drift</strong></div>
+            <div><span>trend</span><strong>+0.16</strong></div>
+            <div><span>status</span><strong class="warn">sustained drift</strong></div>
           </div>
+          <p class="drift-message">Agent remains fluent, but the working mode has moved away from the mission anchor.</p>
         </div>
       </article>
 
-      <div class="project-grid">
-        <article class="mini-project">
-          <div class="project-meta"><span>03</span><span>Agent memory</span></div>
-          <h3>Codebase Memory MCP</h3>
-          <p>An MCP-oriented experiment in giving coding agents durable context over larger codebases.</p>
-          <a href="https://github.com/krshirkoohi/codebase-memory-mcp" target="_blank" rel="noreferrer">Inspect repository ↗</a>
-        </article>
-        <article class="mini-project">
-          <div class="project-meta"><span>04</span><span>Automation</span></div>
+      <div class="project-grid reveal">
+        <a class="project-card" href="https://github.com/krshirkoohi/automated-applicant-system" target="_blank" rel="noreferrer">
+          <span class="project-no">03</span>
+          <span class="project-tag">RAG automation</span>
           <h3>Automated Applicant System</h3>
-          <p>A practical automation project exploring how AI can support job-search workflows without hiding the process from the user.</p>
-          <a href="https://github.com/krshirkoohi/automated-applicant-system" target="_blank" rel="noreferrer">Inspect repository ↗</a>
-        </article>
-        <article class="mini-project">
-          <div class="project-meta"><span>05</span><span>MCP infrastructure</span></div>
+          <p>Uses a master CV and job description to retrieve relevant experience, tailor a CV and generate supporting application material.</p>
+          <span class="project-link">Open project ↗</span>
+        </a>
+        <a class="project-card" href="https://github.com/krshirkoohi/resource-traversal-mcp" target="_blank" rel="noreferrer">
+          <span class="project-no">04</span>
+          <span class="project-tag">MCP infrastructure</span>
           <h3>Resource Traversal MCP</h3>
-          <p>An MCP project focused on traversing and exposing resources to AI clients in a predictable way.</p>
-          <a href="https://github.com/krshirkoohi/resource-traversal-mcp" target="_blank" rel="noreferrer">Inspect repository ↗</a>
-        </article>
+          <p>Explores a simple question with big consequences for agents: how should structured resources be exposed and traversed predictably?</p>
+          <span class="project-link">Open project ↗</span>
+        </a>
+        <a class="project-card" href="https://github.com/krshirkoohi/diffusion-mri-simulator" target="_blank" rel="noreferrer">
+          <span class="project-no">05</span>
+          <span class="project-tag">scientific computing</span>
+          <h3>Diffusion MRI Simulator</h3>
+          <p>A reminder that the AI work sits on top of a quantitative foundation: simulation, modelling and scientific reasoning.</p>
+          <span class="project-link">Open project ↗</span>
+        </a>
       </div>
     </section>
 
-    <section id="about" class="section-shell about-section">
-      <div>
-        <p class="eyebrow">How I work</p>
-        <h2>Technical curiosity, with a bias towards things that actually run.</h2>
-      </div>
-      <div class="about-copy">
-        <p>I came into AI from physics, so I naturally think in terms of signals, models, failure modes and measurement. I’m most interested in the unglamorous layer between a capable model and a dependable product: retrieval, context, interfaces, evaluation and system behaviour over time.</p>
-        <p>I’m early in my professional AI career, but I’m comfortable taking an idea from rough problem statement to architecture, prototype, deployment and documented demo. I care about explaining what a system does, where it fails and why the chosen design is proportionate.</p>
+    <section id="value" class="value-section section">
+      <div class="shell value-shell">
+        <div class="value-intro reveal">
+          <p class="kicker">What I add</p>
+          <h2>I’m useful where “just add AI” stops being a plan.</h2>
+        </div>
+        <div class="value-list">
+          <article class="value-item reveal">
+            <span>01</span><h3>Turn fuzzy ideas into systems</h3><p>I can take an ambiguous AI workflow, identify the actual information flow and failure modes, then build a prototype that makes the design concrete.</p>
+          </article>
+          <article class="value-item reveal">
+            <span>02</span><h3>Connect models to real context</h3><p>I work comfortably with APIs, MCP, semantic retrieval, structured data and the glue that lets an AI client interact with tools rather than live in a chat box.</p>
+          </article>
+          <article class="value-item reveal">
+            <span>03</span><h3>Think about reliability early</h3><p>My physics background makes me care about signals, calibration, evidence and measurement. I naturally ask what a system can infer, what it cannot, and how we know.</p>
+          </article>
+          <article class="value-item reveal">
+            <span>04</span><h3>Explain the technical work</h3><p>I like making architecture and trade-offs legible. A recruiter, client or collaborator should be able to see what the system does without reading the entire codebase first.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section-shell contact-section">
-      <p class="eyebrow">Say hello</p>
-      <h2>If you’re building useful AI systems, I’d like to compare notes.</h2>
-      <div class="hero-actions">
-        <a class="button primary" href="https://linkedin.com/in/krshirkoohi" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="button" href="https://github.com/krshirkoohi" target="_blank" rel="noreferrer">GitHub</a>
+    <section class="shell section proof-section">
+      <div class="section-head reveal">
+        <div><p class="kicker">How I build</p><h2>Small surface area. Real behaviour. Visible trade-offs.</h2></div>
+        <p>I favour systems that can be inspected and tested over impressive diagrams with no operational story behind them.</p>
+      </div>
+      <div class="build-flow reveal" aria-label="Build process">
+        <div><span>01</span><strong>Find the failure mode</strong><p>What is actually going wrong?</p></div>
+        <i>→</i>
+        <div><span>02</span><strong>Build the narrowest useful loop</strong><p>What can run end to end?</p></div>
+        <i>→</i>
+        <div><span>03</span><strong>Measure behaviour</strong><p>What counts as evidence?</p></div>
+        <i>→</i>
+        <div><span>04</span><strong>Make it inspectable</strong><p>Can another person understand it?</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="shell section about-section">
+      <div class="about-card reveal">
+        <div>
+          <p class="kicker">About</p>
+          <h2>Kavia Shirkoohi</h2>
+          <p class="about-role">AI builder · Cardiff, UK</p>
+        </div>
+        <div class="about-copy">
+          <p>I came to AI through physics, where useful answers depend on good models, good measurements and knowing what your assumptions are. That mindset carried over naturally into retrieval, agents and automation.</p>
+          <p>I’m early in my professional AI career, but I’m not waiting for a job title to build. My recent work is focused on systems that give AI better context, better interfaces and better ways to notice when things are going wrong.</p>
+          <div class="about-links">
+            <a href="https://github.com/krshirkoohi" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://linkedin.com/in/krshirkoohi" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="shell contact-inner reveal">
+        <p class="kicker">Recruiting, collaborating or building?</p>
+        <h2>Bring me the messy part.</h2>
+        <p>If the interesting problem is somewhere between the model, the data and the workflow, that is probably where I want to be.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="https://linkedin.com/in/krshirkoohi" target="_blank" rel="noreferrer">Talk on LinkedIn ↗</a>
+          <a class="button button-ghost" href="https://github.com/krshirkoohi" target="_blank" rel="noreferrer">Browse GitHub ↗</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer shell">
     <span>© <span id="year"></span> Kavia Shirkoohi</span>
-    <span>Built to be inspected, not just scrolled.</span>
+    <span>Shirkoohi.com</span>
+    <span>Built to be inspected.</span>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
