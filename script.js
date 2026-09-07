@@ -6,6 +6,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     const target = document.querySelector(id);
     if (!target) return;
     event.preventDefault();
-    target.scrollIntoView({ behaviour: 'smooth' });
+    target.scrollIntoView({ behavior: 'smooth' });
   });
 });
